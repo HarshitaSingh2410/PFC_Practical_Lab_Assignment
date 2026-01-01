@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int attendance, totalPresent = 0;
+    int i;
+    for(i = 1; i <= 30; i++) {
+        printf("Day %d (1=Present,0=Absent): ", i);
+        scanf("%d", &attendance);
+        if(attendance == 1) {
+            totalPresent++; 
+        }
+    }
+    printf("\nTotal present days = %d\n", totalPresent);
+    return 0;
+}
